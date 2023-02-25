@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
+import devme from '../public/assets/devme.png'
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -41,6 +43,9 @@ export default function Home() {
           <div className="text-5xl flex justify-center gap-5 py-3 text-gray-600">
             <AiFillGithub />
             <AiFillLinkedin />
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+            <Image src={devme} fill="true" style={{objectFit: "cover"}} alt="devme"/>
           </div>
         </section>
       </main>
