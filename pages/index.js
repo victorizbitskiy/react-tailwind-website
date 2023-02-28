@@ -7,6 +7,11 @@ import Image from "next/image";
 import design from "../public/assets/design.png";
 import code from "../public/assets/code.png";
 import consulting from "../public/assets/consulting.png";
+import web1 from "../public/assets/web1.png";
+import web2 from "../public/assets/web2.png";
+import web3 from "../public/assets/web3.png";
+import web4 from "../public/assets/web4.png";
+import web5 from "../public/assets/web5.png";
 
 export default function Home() {
   return (
@@ -91,6 +96,23 @@ export default function Home() {
               image={code}
               description="Creating elegant design suited for your needs following core design theory."
             />
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row">
+            <div>
+              <Image src={web1} />
+            </div>
+            <div>
+              <Image src={web2} />
+            </div>
+            <div>
+              <Image src={web3} />
+            </div>
+            <div>
+              <Image src={web4} />
+            </div>
+            <div>
+              <Image src={web5} />
+            </div>
           </div>
         </section>
       </main>
