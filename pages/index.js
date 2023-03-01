@@ -12,6 +12,7 @@ import web2 from "../public/assets/web2.png";
 import web3 from "../public/assets/web3.png";
 import web4 from "../public/assets/web4.png";
 import web5 from "../public/assets/web5.png";
+import web6 from "../public/assets/web6.png";
 
 export default function Home() {
   return (
@@ -97,21 +98,66 @@ export default function Home() {
               description="Creating elegant design suited for your needs following core design theory."
             />
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row">
-            <div>
-              <Image src={web1} />
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={web1}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt="web1"
+              />
             </div>
-            <div>
-              <Image src={web2} />
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={web2}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt="web2"
+              />
             </div>
-            <div>
-              <Image src={web3} />
+            <div className="basis-1/3 flex-1" >
+              <Image
+                src={web3}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt="web3"
+              />
             </div>
-            <div>
-              <Image src={web4} />
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={web4}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt="web4"
+              />
             </div>
-            <div>
-              <Image src={web5} />
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={web5}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt="web5"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={web6}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt="web6"
+              />
             </div>
           </div>
         </section>
