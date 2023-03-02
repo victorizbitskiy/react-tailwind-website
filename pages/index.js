@@ -13,10 +13,12 @@ import web3 from "../public/assets/web3.png";
 import web4 from "../public/assets/web4.png";
 import web5 from "../public/assets/web5.png";
 import web6 from "../public/assets/web6.png";
+import { useState } from "react";
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false)
   return (
-    <>
+    <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Victor Izbitskiy Portfolio</title>
         <meta name="description" content="Victor Izbitskiy Portfolio" />
@@ -24,13 +26,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40">
+      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">developedbyme</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
+                <BsFillMoonStarsFill 
+                className="cursor-pointer text-2xl" 
+                onClick={() => setDarkMode(!darkMode)}
+                />
               </li>
               <li>
                 <a
@@ -162,6 +167,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </>
+    </div>
   );
 }
