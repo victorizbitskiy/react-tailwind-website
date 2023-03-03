@@ -16,7 +16,7 @@ import web6 from "../public/assets/web6.png";
 import { useState } from "react";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -26,15 +26,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-700">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">developedbyme</h1>
+            <h1 className="text-xl font-burtons dark:text-gray-300">developedbyme</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill 
-                className="cursor-pointer text-2xl" 
-                onClick={() => setDarkMode(!darkMode)}
+                <BsFillMoonStarsFill
+                  className="cursor-pointer text-2xl"
+                  onClick={() => setDarkMode(!darkMode)}
                 />
               </li>
               <li>
@@ -51,15 +51,15 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-500 font-medium md:text-6xl">
               Victor Izbitskiy
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl">
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-300">
               Developer and designer.
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400">
               Freelancer providing services for programming and design content
               needs. Join me down below and let`s get cracking!
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-5 py-3 text-gray-600">
+          <div className="text-5xl flex justify-center gap-5 py-3 text-gray-600 dark:text-gray-400">
             <AiFillGithub />
             <AiFillLinkedin />
           </div>
@@ -75,8 +75,10 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <h3 className="text-3xl py-1 dark:text-gray-400">
+              Services I offer
+            </h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
               Since the beginning of my journey as a freelance designer and
               developer, I`ve done remote work for
               <span className="text-teal-500"> agencies</span> consulted for{" "}
@@ -84,7 +86,7 @@ export default function Home() {
               with talented people to create digital products for both business
               and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
               I offer from a wide range of services, including brand desing?
               programming and teaching.
             </p>
@@ -92,15 +94,19 @@ export default function Home() {
           <div className="lg:flex gap-10">
             <Card
               image={design}
+              title="Beautiful Designs"
               description="Creating elegant design suited for your needs following core design theory."
             />
             <Card
               image={consulting}
-              description="Creating elegant design suited for your needs following core design theory."
+              title="Code your dream project"
+              description="Do you have an idea for your next great website? Let's make it a reality."
             />
             <Card
               image={code}
-              description="Creating elegant design suited for your needs following core design theory."
+              title="Consulting"
+              description="Are you interested in feedback for your current project? I can
+                give you tips and tricks to level it up."
             />
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -124,7 +130,7 @@ export default function Home() {
                 alt="web2"
               />
             </div>
-            <div className="basis-1/3 flex-1" >
+            <div className="basis-1/3 flex-1">
               <Image
                 src={web3}
                 className="rounded-lg object-cover"
