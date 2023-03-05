@@ -1,3 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#### This is a project, I created to leart [Next.js](https://nextjs.org/) and [Tilewindcss](https://tailwindcss.com/).
 
-[Sourse](https://www.youtube.com/watch?v=k-Pi5ZMxHWY)
+- [View this project on Vercel](https://react-tailwind-website.vercel.app/)  
+- [Link to tutorial video on YouTube](https://www.youtube.com/watch?v=k-Pi5ZMxHWY)
